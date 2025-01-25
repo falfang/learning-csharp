@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "src\DesignPatterns\AbstractFactory\AbstractFactory.csproj", "{2504944C-29C9-48EC-AA34-A4D2F41B2885}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "src\DesignPatterns\Observer\Observer.csproj", "{5A3FC85A-B275-41CC-AB81-F4B041D25C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
