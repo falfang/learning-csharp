@@ -42,7 +42,8 @@ namespace FactoryMethod.Factory
         /// <param name="product">製品</param>
         protected override void RegisterProduct(AbstractProduct product)
         {
-            this._owners.Add(((Account)product).GetOwner());
+            string? owner = ((Account)product).GetOwner() ?? "No Name";
+            this._owners.Add(owner);
         }
     }
 }

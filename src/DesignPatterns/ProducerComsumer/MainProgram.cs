@@ -54,14 +54,14 @@ namespace ProducerComsumer
             int bytesProcessed = 0;
             while (await source.OutputAvailableAsync())
             {
-                while (source.TryReceive(out byte[] data))
+                while (source.TryReceive(out var data))
                 {
                     bytesProcessed += data.Length;
                 }
             }
+
             return bytesProcessed;
         }
-
 
         /// <summary>
         /// Main Process
