@@ -1,0 +1,26 @@
+﻿<Window
+    x:Class="Graphics.Helix3DToolkit.Sample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ht="http://helix-toolkit.org/wpf"
+    xmlns:local="clr-namespace:Graphics.Helix3DToolkit.Sample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <ht:HelixViewport3D ZoomExtentsWhenLoaded="True">
+            <ht:SunLight />
+            <!--  GridLine  -->
+            <ht:GridLinesVisual3D
+                Width="8"
+                Length="8"
+                MajorDistance="1"
+                MinorDistance="1"
+                Thickness="0.01" />
+            <ModelVisual3D Content="{Binding Model}" />
+        </ht:HelixViewport3D>
+    </Grid>
+</Window>
